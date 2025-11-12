@@ -20,3 +20,10 @@ def versao():
 def saudar(nome):
     nome_formatado = nome.capitalize()
     return f"Olá, {nome_formatado}!", 200
+
+# Exercício 4 — Quadrado de um número
+@app.route('/quadrado/<int:n>')
+def quadrado(n):
+    resultado = n ** 2
+    return f"{n}² = {resultado}", 200
+
