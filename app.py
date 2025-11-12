@@ -14,3 +14,9 @@ def index():
 def versao():
     versao = "1.1.0"
     return f"App v{versao}", 200
+
+# Exercício 3 — Saudação por parâmetro
+@app.route('/saudar/<nome>')
+def saudar(nome):
+    nome_formatado = nome.capitalize()
+    return f"Olá, {nome_formatado}!", 200
