@@ -31,3 +31,8 @@ def quadrado(n):
 @app.route('/home')
 def home():
     return redirect('/'), 302
+
+    # Exercício 6 — Página HTML via template
+@app.route('/pagina')
+def pagina():
+    return render_template('pagina.html'), 200
